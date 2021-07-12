@@ -25,9 +25,7 @@ function pswGenerate(){
 document.getElementById("answer").value = password
 
 }
-function limpar(){
-    document.getElementById("answer").value = " "
-}
+
 
 
 
