@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gerador de senhas</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="pw-container">
+            <div class="pw-header">
+                <div class="pw">
+                    <label for="answer"></label>
+                        <textarea id="answer" rows="4" style="width:350px"></textarea>
+                    
+                </div>
+            </div>
+            <div class="pw-body">
+                <div class="form-control">
+                    <label for="pswLeght">Tamanho da senhas</label>
+                    <input id='pswLeght' type="number" min='1'>
+                    
+                </div>
+                <div>
+                    <label for="pswQtd"> Digite a quantidade de senhas:</label>
+                    <input id="pswQtd" type="number" min="1">
+                </div>
+                <div class="form-control">
+                    <label for="upperCase">Contém letras maiúsculas</label>
+                    <input id="upperCase" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="number">Contém Números </label>
+                    <input id="number" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="special">Contém Símbolos</label>
+                    <input id="special" type="checkbox" />
+                </div>
+                <button onclick="pswGenerate()" class="botao">
+                    Gerar senha
+                </button>
+                <div>
+                <button onclick="clear()" class="botao">
+                    Limpar senha
+                </button>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
